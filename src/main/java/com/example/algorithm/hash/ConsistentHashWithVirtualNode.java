@@ -21,6 +21,9 @@ public class ConsistentHashWithVirtualNode {
      */
     private static SortedMap<Integer,String> nodeMap = new TreeMap<>();
 
+    /**
+     * 虚拟节点数量
+     */
     private static final int VIRTUAL_NODE_COUNT = 5;
 
     private static String [] servers = {
@@ -31,6 +34,9 @@ public class ConsistentHashWithVirtualNode {
             "192.168.56.124:13009"
     };
 
+    /**
+     * 初始化
+     */
     static{
         for (int i = 0; i < servers.length; i++) {
             for (int j = 0; j < VIRTUAL_NODE_COUNT; j++) {
@@ -43,6 +49,11 @@ public class ConsistentHashWithVirtualNode {
         System.out.println("============");
     }
 
+    /**
+     * hash
+     * @param key
+     * @return
+     */
     public static int hash(String key){
         if (StringUtils.isEmpty(key)){
             return 0;
@@ -63,6 +74,11 @@ public class ConsistentHashWithVirtualNode {
     }
 
 
+    /**
+     * 路由缓存算法
+     * @param key
+     * @return
+     */
     public static String getServer(String key){
         int hash = hash(key);
         SortedMap<Integer, String> sortedMap = nodeMap.tailMap(hash);
