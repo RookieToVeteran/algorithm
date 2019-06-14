@@ -75,7 +75,7 @@ public class ConsistentHashWithVirtualNode {
 
 
     /**
-     * 路由缓存算法
+     * 缓存路由算法
      * @param key
      * @return
      */
