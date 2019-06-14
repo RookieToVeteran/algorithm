@@ -1,7 +1,6 @@
 package com.example.algorithm.hash;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @program: algorithm
@@ -64,15 +63,12 @@ public class SortArrayMap {
      */
   public void sort(){
       System.out.println(size);
-      //todo  空的Node节点不能进行排序
-        Arrays.sort(buckets, 0,size, new Comparator<Node>() {
-            @Override
-            public int compare(Node o1, Node o2) {
-                if (o1.key >= o2.key) {
-                    return 1;
-                } else {
-                    return -1;
-                }
+      //空的Node节点不能进行排序
+        Arrays.sort(buckets, 0,size, (o1, o2) -> {
+            if (o1.key >= o2.key) {
+                return 1;
+            } else {
+                return -1;
             }
         });
   }
@@ -102,8 +98,8 @@ public class SortArrayMap {
      * 数据节点
      */
     private class Node{
-        public Long key ;
-        public String value;
+        private Long key ;
+        private String value;
 
         public Node(Long key, String value) {
             this.key = key;

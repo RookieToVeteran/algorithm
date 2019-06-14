@@ -19,7 +19,6 @@ public class ConsistentHashMap {
 
     private Node[] buckets;
 
-    private int size = 0;
 
     /**
      * 默认长度
@@ -54,7 +53,7 @@ public class ConsistentHashMap {
                 list.add(i);
             }
         }
-        if (list.size()<=0){
+        if (list.isEmpty()){
             return buckets[0].value;
         }else {
             Collections.sort(list);
@@ -103,8 +102,8 @@ public class ConsistentHashMap {
      * 数据节点
      */
     private class Node<V>{
-        public Integer key ;
-        public V value;
+        private Integer key ;
+        private V value;
 
         public Node(Integer key, V value) {
             this.key = key;
