@@ -27,7 +27,7 @@
         <appender-ref ref="file"/>
     </root>
     <!--mybatis打印sql日志配置-->
-    <logger name="com.example.algorithm.project.mapper"  level="debug" additivity="false">
+    <logger name="com.algorithm.project.mapper"  level="debug" additivity="false">
         <appender-ref ref="console" />
         <appender-ref ref="file"/>
     </logger>
