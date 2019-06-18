@@ -1,6 +1,7 @@
 package com.example.algorithm.project.garbage_sorting;
 
-import com.example.algorithm.common.vo.BaseResult;
+import com.example.algorithm.entity.domain.GarbageSorting;
+import com.example.algorithm.entity.vo.BaseResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class GarbageSortingController {
     @GetMapping("/select/all")
     public BaseResult selectGarbage(){
         logger.info("/garbage/select/all,查询所有垃圾分类");
-        List<Map> result = garbageSortingService.selectGarbage();
+        List<GarbageSorting> result = garbageSortingService.selectGarbage();
         return new BaseResult(true,result);
     }
 

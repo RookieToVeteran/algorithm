@@ -1,10 +1,12 @@
 package com.example.algorithm.project.garbage_sorting;
 
+import com.example.algorithm.entity.domain.GarbageSorting;
 import com.example.algorithm.project.mapper.GarbageSortingMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -23,9 +25,10 @@ public class GarbageSortingServiceImpl implements GarbageSortingService{
     @Autowired
     private GarbageSortingMapper mapper;
 
+    @Transactional(rollbackFor = Exception.class)
     @Override
-    public List<Map> selectGarbage() {
-        List<Map> result = mapper.selectGarbage();
+    public List<GarbageSorting> selectGarbage() {
+        List<GarbageSorting> result = mapper.selectAll();
         return result;
     }
 }
