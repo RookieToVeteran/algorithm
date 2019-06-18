@@ -1,4 +1,4 @@
-package com.example.algorithm.hash;
+package com.example.algorithm.hash.base;
 
 import org.springframework.util.StringUtils;
 
