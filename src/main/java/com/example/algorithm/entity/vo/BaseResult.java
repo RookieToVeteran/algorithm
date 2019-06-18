@@ -1,4 +1,4 @@
-package com.example.algorithm.common.vo;
+package com.example.algorithm.entity.vo;
 
 /**
  * @program: algorithm
