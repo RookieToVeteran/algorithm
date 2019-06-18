@@ -138,8 +138,8 @@ public class DruidConfig {
         //添加XML目录
         VFS.addImplClass(SpringBootVFS.class);
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:com/example/algorithm/project/mapper/*.xml"));
-        logger.info("mapper层扫描包为:com/example/algorithm/project/mapper/*.xml");
+        sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:com/algorithm/project/mapper/*.xml"));
+        logger.info("mapper层扫描包为:com/algorithm/project/mapper/*.xml");
         return sqlSessionFactoryBean.getObject();
     }
 

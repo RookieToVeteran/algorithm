@@ -31,6 +31,9 @@ public class GarbageSortingController {
     public BaseResult selectGarbage(){
         logger.info("/garbage/select/all,查询所有垃圾分类");
         List<GarbageSorting> result = garbageSortingService.selectGarbage();
+        for (GarbageSorting garbageSorting : result) {
+            System.out.println(garbageSorting);
+        }
         return new BaseResult(true,result);
     }
 
