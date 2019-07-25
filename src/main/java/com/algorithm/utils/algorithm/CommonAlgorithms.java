@@ -1,4 +1,4 @@
-package com.algorithm.utils.algorithm_project;
+package com.algorithm.utils.algorithm;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

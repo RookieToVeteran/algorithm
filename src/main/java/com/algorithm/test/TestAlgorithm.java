@@ -1,6 +1,6 @@
 package com.algorithm.test;
 
-import com.algorithm.utils.algorithm_project.CommonAlgorithms;
+import com.algorithm.utils.algorithm.CommonAlgorithms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
