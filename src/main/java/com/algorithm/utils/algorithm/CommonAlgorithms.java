@@ -65,6 +65,7 @@ public class CommonAlgorithms {
                 }
             }
             //如找到了一个合适的位置
+            //todo 此处j的值是由上一个for循环得到的，根据j的值可间接找到targetArray[i]合适的位置
             if (j != i - 1) {
                 //将比i大的数往后移
                 int temp = targetArray[i];

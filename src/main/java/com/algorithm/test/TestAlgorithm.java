@@ -39,12 +39,13 @@ public class TestAlgorithm {
 
 
     private static void testInsertSort(){
-        int[] targetArray = new int[30];
-        Random random = new Random();
-        for (int i = 0; i < 30; i++) {
-            int i1 = random.nextInt(50);
-            targetArray[i] = i1;
-        }
+        int[] targetArray = {20,30,40,10,60,50};
+//        int[] targetArray = new int[12];
+//        Random random = new Random();
+//        for (int i = 0; i < 12; i++) {
+//            int i1 = random.nextInt(20);
+//            targetArray[i] = i1;
+//        }
         CommonAlgorithms.insertSort(targetArray);
         for (int i : targetArray) {
             System.out.println(i);
