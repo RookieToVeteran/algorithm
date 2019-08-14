@@ -60,7 +60,7 @@ public class CommonAlgorithms {
         for ( i = 1; i < targetArray.length; i++) {
             //为targetArray[i]在前面的targetArray[0...i-1]有序区间中找一个合适的位置
             for ( j = i - 1; j >= 0 ; j--) {
-                if(targetArray[j] < targetArray[i]){
+                if(targetArray[j] <= targetArray[i]){
                     break;
                 }
             }
@@ -78,6 +78,10 @@ public class CommonAlgorithms {
     }
 
 
+    /**
+     * 冒泡排序
+     * @param targetArray
+     */
     public static void bubbleSort(int[] targetArray){
 
 
@@ -85,6 +89,12 @@ public class CommonAlgorithms {
     }
 
 
+    /**
+     * 快速排序
+     */
+    public static void quickSort(){
 
+
+    }
 
 }
