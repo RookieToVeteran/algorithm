@@ -18,14 +18,8 @@ public class LeetCode {
 	private static Logger logger = LoggerFactory.getLogger(LeetCode.class);
 
 	public static void main(String[] args) {
-		int[] nums = new int[]{2,7,11,15};
-//		int[] ints = twoNums(nums, 9);
-		int[] ints = twoNums2(nums, 9);
 
 
-		for (int anInt : ints) {
-			System.out.println(anInt);
-		}
 	}
 
 
@@ -67,6 +61,24 @@ public class LeetCode {
 		throw new IllegalArgumentException("No two sum solution");
 	}
 
+	public class ListNode {
+		int val;
+		ListNode next;
+		ListNode(int x){
+			val = x;
+		}
+
+	}
+
+//	/**
+//	 * leetCode 第二题，两数相加
+//	 */
+//	public static ListNode addTwoNumber(ListNode l1, ListNode l2){
+//		ListNode p1 = l1;
+//		ListNode p2 = l2;
+//
+//
+//	}
 
 
 }
