@@ -64,25 +64,37 @@ public class DoubleLink<T> {
 	 * @param index
 	 * @return
 	 */
+//	public DNode<T> getNode(int index){
+//		if (index<0 || index>=mCount){
+//			throw new IndexOutOfBoundsException();
+//		}
+//
+//		//正向查找
+//		if (index <= mCount/2){
+//			DNode next = headNode.next;
+//			for (int i = 0; i < index; i++) {
+//				 next = next.next;
+//			}
+//			return next;
+//		}
+//
+//		DNode pre = headNode.pre;
+//		for (int i = 0; i < mCount-index+1; i++) {
+//			 pre = pre.pre;
+//		}
+//		return pre;
+//	}
+
 	public DNode<T> getNode(int index){
 		if (index<0 || index>=mCount){
 			throw new IndexOutOfBoundsException();
 		}
 
-		//正向查找
-		if (index <= mCount/2){
-			DNode next = headNode.next;
-			for (int i = 0; i < index; i++) {
-				 next = next.next;
-			}
-			return next;
+		DNode next = headNode.next;
+		for (int i = 0; i < index; i++) {
+			next = next.next;
 		}
-
-		DNode pre = headNode.pre;
-		for (int i = 0; i < mCount-index+1; i++) {
-			 pre = pre.pre;
-		}
-		return pre;
+		return next;
 	}
 
 	/**
@@ -109,8 +121,84 @@ public class DoubleLink<T> {
 		return getNode(index).value;
 	}
 
+	/**
+	 * 在index位置插入节点
+	 * @param index
+	 * @param obj
+	 */
 	public void insert(int index, T obj){
+		if (index<0){
+			throw new IndexOutOfBoundsException();
+		}
+		//DESC 第一个位置
+		if (index==0){
+			DNode next = headNode.next;
+			DNode<T> firstNode = new DNode(headNode,next, obj);
+			headNode.next = firstNode;
+			next.pre=firstNode;
+			mCount++;
+			return;
+		}
+		//最后一个节点
+		if (index == mCount-1){
+			DNode<T> node = getNode(index);
+			DNode<T> tdNode = new DNode<>(node, null, obj);
+			node.next = tdNode;
+			mCount++;
+			return;
+		}
 
+		DNode<T> node = getNode(index);
+		DNode<T> tdNode = new DNode<>(node.pre, node.next, obj);
+		DNode next = node.next;
+		node.next = tdNode;
+		next.pre = tdNode;
+		mCount++;
+		return;
 	}
 
+	/**
+	 * 将元素插入第一个节点
+	 * @param obj
+	 */
+	public void insertFirst(T obj){
+		insert(0,obj);
+	}
+
+	/**
+	 * 追加到最后一个节点
+	 * @param obj
+	 */
+	 public void appendLast(T obj){
+		insert(mCount-1,obj);
+	 }
+
+	/**
+	 * 删除index处的节点
+	 * @param index
+	 * @return
+	 */
+	 public T delete(int index){
+		 DNode<T> node = getNode(index);
+		 DNode pre = node.pre;
+		 DNode next = node.next;
+		 pre.next = next;
+		 next.pre = pre;
+		 mCount--;
+		 T value = node.value;
+		 node =null;
+		 return value;
+	 }
+
+	/**
+	 * 删除第一个节点
+	 * @return
+	 */
+	public T deleteFirst(){
+	 	return delete(0);
+	 }
+
+	 public T deleteLast(){
+		return delete(mCount-1);
+	 }
 }
