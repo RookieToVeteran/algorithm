@@ -18,26 +18,25 @@ public class DoubleLink<T> {
 	private int mCount;
 
 
+	public DoubleLink() {
+		headNode = new DNode<T>(null, null, null);
+		headNode.next = headNode;
+		mCount = 0;
+	}
+
 	/**
 	 * 双向链表的节点
 	 */
-	private class DNode<T> {
-		private DNode pre;
-		private DNode next;
-		private T value;
+	class DNode<T> {
+		public DNode pre;
+		public DNode next;
+		public T value;
 
-		public DNode(DNode pre, DNode next, T value) {
+		DNode(DNode pre, DNode next, T value) {
 			this.pre = pre;
 			this.next = next;
 			this.value = value;
 		}
-	}
-
-
-	public DoubleLink() {
-		DNode dNode = new DNode(null, null, null);
-		dNode.next = dNode.pre = dNode;
-		mCount = 0;
 	}
 
 	/**
@@ -64,26 +63,6 @@ public class DoubleLink<T> {
 	 * @param index
 	 * @return
 	 */
-//	public DNode<T> getNode(int index){
-//		if (index<0 || index>=mCount){
-//			throw new IndexOutOfBoundsException();
-//		}
-//
-//		//正向查找
-//		if (index <= mCount/2){
-//			DNode next = headNode.next;
-//			for (int i = 0; i < index; i++) {
-//				 next = next.next;
-//			}
-//			return next;
-//		}
-//
-//		DNode pre = headNode.pre;
-//		for (int i = 0; i < mCount-index+1; i++) {
-//			 pre = pre.pre;
-//		}
-//		return pre;
-//	}
 
 	public DNode<T> getNode(int index){
 		if (index<0 || index>=mCount){
@@ -117,7 +96,7 @@ public class DoubleLink<T> {
 	 * 获取第index位置的节点的值
 	 * @return
 	 */
-	public T getLast(int index){
+	public T getIndex(int index){
 		return getNode(index).value;
 	}
 
@@ -130,31 +109,23 @@ public class DoubleLink<T> {
 		if (index<0){
 			throw new IndexOutOfBoundsException();
 		}
-		//DESC 第一个位置
+//		//DESC 第一个位置
 		if (index==0){
 			DNode next = headNode.next;
-			DNode<T> firstNode = new DNode(headNode,next, obj);
+			DNode<T> firstNode = new DNode<>(headNode, next, obj);
 			headNode.next = firstNode;
-			next.pre=firstNode;
-			mCount++;
-			return;
-		}
-		//最后一个节点
-		if (index == mCount-1){
-			DNode<T> node = getNode(index);
-			DNode<T> tdNode = new DNode<>(node, null, obj);
-			node.next = tdNode;
+			next.pre = firstNode;
 			mCount++;
 			return;
 		}
 
 		DNode<T> node = getNode(index);
-		DNode<T> tdNode = new DNode<>(node.pre, node.next, obj);
 		DNode next = node.next;
-		node.next = tdNode;
-		next.pre = tdNode;
+		DNode<T> lastNode = new DNode<>(node, next, obj);
+		node.next = lastNode;
 		mCount++;
 		return;
+
 	}
 
 	/**
@@ -202,3 +173,6 @@ public class DoubleLink<T> {
 		return delete(mCount-1);
 	 }
 }
+
+
+
