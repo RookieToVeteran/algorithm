@@ -1,7 +1,14 @@
 package com.algorithm.utils.algorithm;
 
+import com.algorithm.dto.Interval;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @program: algorithm
@@ -100,6 +107,44 @@ public class CommonAlgorithms {
     public static void quickSort(){
 
 
+    }
+
+    /**
+     * 区间合并算法: 时间复杂度： O(n),空间复杂度：O(1)
+     * @param intervalList : 区间对象
+     * @return
+     */
+    public static List<Interval> merge(List<Interval> intervalList){
+        List<Interval> mergedIntervalList = new ArrayList<>();
+        if (intervalList==null || intervalList.isEmpty()){
+            return mergedIntervalList;
+        }
+        if (intervalList.size()==1){
+            return mergedIntervalList;
+        }
+
+        //升序排序——后一个区间next的start一定不小于前一个区间pre的start，如果next.start > pre.end,则区间没有交集，否则，pre和next区间进行合并
+        Collections.sort(intervalList, new Comparator<Interval>() {
+            @Override
+            public int compare(Interval o1, Interval o2) {
+                return o1.getStart()-o2.getStart();
+            }
+        });
+
+
+        Interval pre = null;
+        int temp ;
+        for (Interval interval : intervalList) {
+            if (pre==null || pre.getEnd() < interval.getStart()){
+                pre = interval;
+                mergedIntervalList.add(pre);
+            }else {
+               temp = pre.getEnd()>=interval.getEnd()?pre.getEnd(): interval.getEnd();
+               pre.setEnd(temp);
+            }
+        }
+
+        return mergedIntervalList;
     }
 
 }
