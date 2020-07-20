@@ -163,6 +163,8 @@ public class CommonAlgorithms {
             }
             if (!flag){
                 array[0] = cur;
+                preV = cur;
+                preIndex = 0;
             }
         }
 

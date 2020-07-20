@@ -44,7 +44,7 @@ public class TestAlgorithm {
 
 
 	private static void testInsertSort() {
-		int[] targetArray = { 30, 40,20, 10, 60, 50};
+		int[] targetArray = { 30, 40,20, 10,10, 60, 50,10};
 //		CommonAlgorithms.insertSort(targetArray);
 		for (int i : targetArray) {
 			System.out.println(i);
