@@ -21,10 +21,9 @@ public class TestAlgorithm {
 
 	public static void main(String[] args) {
 		//二分查找
-//		testBinarySearch();
+		testBinarySearch();
 		//插入排序
-//		testInsertSort();
-
+		testInsertSort();
 		//区间合并
 		testMerged();
 	}
@@ -45,8 +44,15 @@ public class TestAlgorithm {
 
 
 	private static void testInsertSort() {
-		int[] targetArray = {20, 30, 40, 10, 60, 50};
-		CommonAlgorithms.insertSort(targetArray);
+		int[] targetArray = { 30, 40,20, 10, 60, 50};
+//		CommonAlgorithms.insertSort(targetArray);
+		for (int i : targetArray) {
+			System.out.println(i);
+		}
+		System.out.println("===========================");
+		System.out.println("===========================");
+
+		CommonAlgorithms.InsertionSortWithSentry(targetArray);
 		for (int i : targetArray) {
 			System.out.println(i);
 		}
