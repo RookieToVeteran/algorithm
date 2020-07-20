@@ -129,7 +129,7 @@ public class CommonAlgorithms {
     }
 
     /**
-     * 直接插入排序—设置哨兵位  时间复杂度： O(n^2) 空间复杂度 ： O(1)
+     * 直接插入排序：稳定排序—设置哨兵位  时间复杂度： O(n^2) 空间复杂度 ： O(1)
      * @return
      */
     public static void InsertionSortWithSentry(int [] array){
@@ -140,12 +140,59 @@ public class CommonAlgorithms {
         int preIndex = 0;
         for (int i = 1; i < array.length; i++) {
             int cur = array[i];
+            //DESC 默认前一个值所在的位置
             int startIndex = i - 1;
-            //DESC 当前value小于上一个value，可以假定当前value就是上一个value,当前value与上一个value中间的值整体往后移动
+            //DESC 当前value小于上一个value，将上一个value及之后的值整体往后移动
             if (cur < preV){
                 startIndex = preIndex;
+                //DESC i-1: 前一个位置，startIndex: 实际前一个值所在的位置
                 for (int j = i-1; j > startIndex - 1; j--) {
                    array[j+1]= array[j];
+                }
+            }
+
+            boolean flag = false;
+            for (int j = startIndex; j > -1; j--) {
+                if (cur >= array[j]){
+                    array[j+1] = cur;
+                    preV = cur;
+                    preIndex = j+1;
+                    flag = true;
+                    break;
+                }else{
+                    array[j+1] = array[j];
+                }
+            }
+            if (!flag){
+                array[0] = cur;
+                preV = cur;
+                preIndex = 0;
+            }
+        }
+
+
+    }
+
+    /**
+     * 直接插入排序：不稳定排序—设置哨兵位  时间复杂度： O(n^2) 空间复杂度 ： O(1)
+     * @return
+     */
+    public static void InsertionSortWithSentry2(int [] array){
+        if (array == null || array.length < 2){
+            return ;
+        }
+        int preV = array[0];
+        int preIndex = 0;
+        for (int i = 1; i < array.length; i++) {
+            int cur = array[i];
+            //DESC 默认前一个值所在的位置
+            int startIndex = i - 1;
+            //DESC 当前value小于上一个value，将上一个value及之后的值整体往后移动
+            if (cur <= preV){
+                startIndex = preIndex;
+                //DESC i-1: 前一个位置，startIndex: 实际前一个值所在的位置
+                for (int j = i-1; j > startIndex - 1; j--) {
+                    array[j+1]= array[j];
                 }
             }
 
