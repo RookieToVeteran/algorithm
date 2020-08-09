@@ -23,7 +23,7 @@ public class KafkaController {
     @GetMapping("/message/send")
     public boolean send(@RequestParam String message){
         System.out.println("=============向生产者推送消息--------开始");
-        kafkaTemplate.send("testTopic",message);
+//        kafkaTemplate.send("testTopic",message);
         System.out.println("=============向生产者推送消息--------完成");
         return true;
     }
