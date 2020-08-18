@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @program: kafka
  * @description: kafka生产者
- * @author: pengpeng.wang.o
+ * @Author: Pengpeng.Wang.o
  * @create: 2019-08-13
  **/
 @RestController
