@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConsumerListener {
 
-    @KafkaListener(topics = "testTopic")
+//    @KafkaListener(topics = "testTopic")
     public void onMessage(String message){
         System.out.println("=======开始消费kafka消息=======");
         System.out.println(message);
