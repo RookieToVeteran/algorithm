@@ -1,4 +1,4 @@
-package com.algorithm.test;
+package com.algorithm.test.publishandlisten;
 
 import com.algorithm.dto.User;
 import lombok.extern.slf4j.Slf4j;

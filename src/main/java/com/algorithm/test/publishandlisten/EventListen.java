@@ -1,4 +1,4 @@
-package com.algorithm.test;
+package com.algorithm.test.publishandlisten;
 
 import com.algorithm.dto.UserRegisterEvent;
 import org.springframework.context.ApplicationListener;
