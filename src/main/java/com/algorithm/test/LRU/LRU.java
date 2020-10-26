@@ -28,7 +28,7 @@ public class LRU {
 
 
     public LRU(){
-        swapExpirePool.scheduleWithFixedDelay(new ExpireNode(),1,2, TimeUnit.SECONDS);
+        swapExpirePool.scheduleWithFixedDelay(new ExpireNode(), 1, 2, TimeUnit.SECONDS);
     }
 
     /**
