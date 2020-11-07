@@ -1,16 +1,22 @@
 package com.algorithm.test;
 
 import com.algorithm.dto.User;
+import com.algorithm.test.single.SingleObject3;
+import com.algorithm.test.single.SingleObjectEnum;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class SimpleTest {
 
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-
         serializebleUser();
         deSerializebelUser();
+        SingleObject3 value =  SingleObjectEnum.INSTANCE.getValue();
     }
 
     private static void deSerializebelUser() throws IOException, ClassNotFoundException {
