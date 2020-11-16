@@ -1,0 +1,459 @@
+2020-10-20 19:25:11.176 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 30780 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:25:11.189 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:25:12.209 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:25:12.386 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:25:12.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$f0125fdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:25:13.451 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:25:13.475 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:25:13.493 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:25:13.493 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:25:13.996 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:25:13.997 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 2686 ms
+2020-10-20 19:25:14.473 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:25:14.478 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:25:16.761 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig             : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-10-20 19:25:16.904 [main] INFO  org.apache.kafka.common.utils.AppInfoParser                  : Kafka version : 2.0.1
+2020-10-20 19:25:16.907 [main] INFO  org.apache.kafka.common.utils.AppInfoParser                  : Kafka commitId : fa14705e51bd2ce5
+2020-10-20 19:25:18.308 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:19.411 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:20.514 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:21.820 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:23.225 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:25.033 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:27.042 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:29.053 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:30.967 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:33.074 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:35.083 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:37.258 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:39.266 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:41.401 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:43.509 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:45.693 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:47.766 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:50.020 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:52.148 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:54.261 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:56.458 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:25:58.613 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:00.730 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:02.959 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:04.973 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:06.978 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:08.988 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:10.928 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:13.046 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:15.156 [main] WARN  org.apache.kafka.clients.NetworkClient                       : [Consumer clientId=consumer-1, groupId=test-group] Connection to node -1 could not be established. Broker may not be available.
+2020-10-20 19:26:17.198 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is org.apache.kafka.common.errors.TimeoutException: Timeout expired while fetching topic metadata
+2020-10-20 19:26:17.200 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 19:26:17.211 [main] INFO  org.apache.catalina.core.StandardService                     : Stopping service [Tomcat]
+2020-10-20 19:26:17.267 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLoggingListener     : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-20 19:26:17.283 [main] ERROR org.springframework.boot.SpringApplication                   : Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is org.apache.kafka.common.errors.TimeoutException: Timeout expired while fetching topic metadata
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:893)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.algorithm.AlgorithmApplication.main(AlgorithmApplication.java:14)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timeout expired while fetching topic metadata
+2020-10-20 19:27:25.288 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 24788 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:27:25.294 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:27:26.679 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:27:27.067 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:27:27.998 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$daaac91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:27:30.149 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:27:30.210 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:27:30.233 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:27:30.234 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:27:30.779 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:27:30.779 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 5353 ms
+2020-10-20 19:27:34.072 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:27:34.077 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:27:38.587 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:27:38.630 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 19:27:38.635 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 14.938 seconds (JVM running for 17.901)
+2020-10-20 19:47:43.174 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 6312 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:47:43.177 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:47:44.424 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:47:44.659 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:47:45.252 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$976e6c50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:47:46.319 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:47:46.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:47:46.396 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:47:46.397 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:47:46.845 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:47:46.847 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 3562 ms
+2020-10-20 19:47:47.256 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:47:47.258 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:47:49.066 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:47:49.099 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 19:47:49.103 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 7.101 seconds (JVM running for 8.809)
+2020-10-20 19:48:03.155 [http-nio-35721-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 19:48:03.155 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 19:48:03.172 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 16 ms
+2020-10-20 19:48:03.217 [http-nio-35721-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet]       : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.algorithm.test.publishandlisten.RegisterControll.register(RegisterControll.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-20 19:48:21.174 [http-nio-35721-exec-4] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet]       : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.algorithm.test.publishandlisten.RegisterControll.register(RegisterControll.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-20 19:48:41.367 [http-nio-35721-exec-6] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet]       : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.algorithm.test.publishandlisten.RegisterControll.register(RegisterControll.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-20 19:49:18.510 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 28564 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:49:18.514 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:49:19.256 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:49:19.431 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:49:19.814 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b7d1c514] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:49:20.435 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:49:20.458 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:49:20.473 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:49:20.474 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:49:20.682 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:49:20.682 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 2091 ms
+2020-10-20 19:49:22.317 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:49:22.326 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:49:25.897 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:49:25.957 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 19:49:25.965 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 8.287 seconds (JVM running for 14.001)
+2020-10-20 19:49:41.737 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 19:50:09.991 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 13760 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:50:09.995 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:50:11.453 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:50:11.670 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:50:12.059 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$440d57a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:50:12.707 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:50:12.733 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:50:12.748 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:50:12.749 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:50:12.961 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:50:12.963 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 2750 ms
+2020-10-20 19:50:15.086 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:50:15.092 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:50:20.384 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:50:20.428 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 19:50:20.434 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 12.214 seconds (JVM running for 17.809)
+2020-10-20 19:50:36.836 [http-nio-35721-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 19:50:36.837 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 19:50:36.853 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 16 ms
+2020-10-20 19:51:14.645 [Thread-18] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 19:53:04.093 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 31292 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 19:53:04.120 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 19:53:05.449 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 19:53:05.826 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 19:53:06.355 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$4f4333d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 19:53:07.248 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 19:53:07.281 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:53:07.298 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 19:53:07.298 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 19:53:07.561 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 19:53:07.562 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 3365 ms
+2020-10-20 19:53:08.130 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 19:53:08.133 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 19:53:11.445 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 19:53:11.498 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 19:53:11.506 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 8.174 seconds (JVM running for 14.514)
+2020-10-20 19:57:37.610 [http-nio-35721-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 19:57:37.610 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 19:57:37.633 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 22 ms
+2020-10-20 20:02:22.978 [Thread-18] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 20:03:16.480 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 9712 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 20:03:16.483 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 20:03:17.517 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 20:03:17.695 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 20:03:18.108 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b90c3289] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 20:03:18.830 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 20:03:18.856 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:03:18.872 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 20:03:18.872 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 20:03:19.119 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 20:03:19.120 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 2467 ms
+2020-10-20 20:03:20.736 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 20:03:20.740 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 20:03:22.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:03:22.579 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 20:03:22.584 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 7.135 seconds (JVM running for 11.501)
+2020-10-20 20:03:45.658 [http-nio-35721-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 20:03:45.660 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 20:03:45.682 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 21 ms
+2020-10-20 20:04:15.537 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 20:04:57.210 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 16080 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 20:04:57.215 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 20:04:59.144 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 20:04:59.586 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 20:05:00.858 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$188dacc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 20:05:01.864 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 20:05:01.924 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:05:01.946 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 20:05:01.952 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 20:05:02.266 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 20:05:02.267 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 4953 ms
+2020-10-20 20:05:02.875 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 20:05:02.882 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 20:05:05.837 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:05:05.919 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 20:05:05.959 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 9.799 seconds (JVM running for 16.44)
+2020-10-20 20:05:50.032 [http-nio-35721-exec-2] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 20:05:50.032 [http-nio-35721-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 20:05:50.053 [http-nio-35721-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 21 ms
+2020-10-20 20:06:03.075 [Thread-19] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'
+2020-10-20 20:06:51.419 [main] INFO  com.algorithm.AlgorithmApplication                           : Starting AlgorithmApplication on LT5CG8335KZ3 with PID 32772 (C:\JDK\IdeaProjects\personal-study-2019\algorithm\target\classes started by pengpeng.wang.o in C:\JDK\IdeaProjects\personal-study-2019\algorithm)
+2020-10-20 20:06:51.463 [main] INFO  com.algorithm.AlgorithmApplication                           : The following profiles are active: db,kafka
+2020-10-20 20:06:52.553 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm.*.mapper]' package. Please check your configuration.
+2020-10-20 20:06:52.744 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner             : No MyBatis mapper was found in '[com.algorithm]' package. Please check your configuration.
+2020-10-20 20:06:53.179 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$429792c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-20 20:06:53.805 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 35721 (http)
+2020-10-20 20:06:53.828 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:06:53.843 [main] INFO  org.apache.catalina.core.StandardService                     : Starting service [Tomcat]
+2020-10-20 20:06:53.843 [main] INFO  org.apache.catalina.core.StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-20 20:06:54.033 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-20 20:06:54.034 [main] INFO  org.springframework.web.context.ContextLoader                : Root WebApplicationContext: initialization completed in 2393 ms
+2020-10-20 20:06:54.437 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService
+2020-10-20 20:06:54.440 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Initializing ExecutorService 'capacityExecutor'
+2020-10-20 20:06:56.398 [main] INFO  org.apache.coyote.http11.Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-35721"]
+2020-10-20 20:06:56.435 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 35721 (http) with context path ''
+2020-10-20 20:06:56.440 [main] INFO  com.algorithm.AlgorithmApplication                           : Started AlgorithmApplication in 6.074 seconds (JVM running for 8.424)
+2020-10-20 20:06:59.669 [http-nio-35721-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-20 20:06:59.670 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Initializing Servlet 'dispatcherServlet'
+2020-10-20 20:06:59.690 [http-nio-35721-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet            : Completed initialization in 20 ms
+2020-10-20 20:07:26.599 [Thread-16] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor             : Shutting down ExecutorService 'capacityExecutor'

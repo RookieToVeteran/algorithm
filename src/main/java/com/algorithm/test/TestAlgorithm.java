@@ -26,12 +26,32 @@ public class TestAlgorithm {
 		testInsertSort();
 		//区间合并
 		testMerged();
+
+
+		System.out.println(getValue(2));
+		
+
+
+	}
+
+	public static int getValue(int i) {
+		int result = 0;
+		switch (i) {
+			case 1:
+				result = result + i;
+			case 2:
+				result = result + i * 3;
+			case 3:
+				result = result + i * 5;
+		}
+		return result;
 	}
 
 
-	/**
-	 * 二分查找
-	 */
+
+/**
+ * 二分查找
+ */
 	private static void testBinarySearch() {
 		int[] targetArray = new int[1000];
 		for (int i = 0; i < 1000; i++) {
