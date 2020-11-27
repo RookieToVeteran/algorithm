@@ -6,22 +6,11 @@ package com.algorithm.test.single;
 public enum SingleObjectEnum {
 
     //枚举元素本身就是单例
-    INSTANCE(SingleObject3.getInstance());
+    INSTANCE();
 
-    private SingleObject3 value;
 
-    SingleObjectEnum() {
-    }
-
-    SingleObjectEnum(SingleObject3 value) {
-        this.value = value;
-    }
-
-    public SingleObject3 getValue() {
-        return value;
-    }
-
-    public void singleton(){
-
+    public void doSomething(){
+        //todo
+        return;
     }
 }

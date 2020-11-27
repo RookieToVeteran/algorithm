@@ -1,12 +1,19 @@
 package com.algorithm.test;
 
+import com.algorithm.test.single.SingleObject3;
+import com.algorithm.test.single.SingleObjectEnum;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
 public class TestAll {
 
     public static void main(String[] args) {
-      test();
+        SingleObjectEnum instance = SingleObjectEnum.INSTANCE;
+        SingleObject3 value = instance.getValue();
+
+
+        test();
 
         System.out.println(test1());
     }
