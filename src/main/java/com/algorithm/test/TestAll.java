@@ -9,8 +9,7 @@ import java.util.HashSet;
 public class TestAll {
 
     public static void main(String[] args) {
-        SingleObjectEnum instance = SingleObjectEnum.INSTANCE;
-        SingleObject3 value = instance.getValue();
+
 
 
         test();

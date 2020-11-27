@@ -16,7 +16,6 @@ public class SimpleTest {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         serializebleUser();
         deSerializebelUser();
-        SingleObject3 value =  SingleObjectEnum.INSTANCE.getValue();
     }
 
     private static void deSerializebelUser() throws IOException, ClassNotFoundException {

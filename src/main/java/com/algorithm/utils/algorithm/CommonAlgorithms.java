@@ -20,36 +20,6 @@ public class CommonAlgorithms {
 
     private static Logger LOGGER = LoggerFactory.getLogger(CommonAlgorithms.class);
 
-    /**
-     * 查询算法
-     */
-
-    /**
-     * 二分查找  --- 前提是数组有序
-     * @param targetArray
-     * @param target
-     * @return
-     */
-    public static boolean binarySearch(int[] targetArray,int target){
-        //查询次数
-        int count = 0;
-        int low = 0;
-        int high = targetArray.length - 1;
-        while (low <= high){
-            count ++ ;
-            int middle = (low + high) / 2;
-            int assumeValue = targetArray[middle];
-            if (assumeValue==target){
-                LOGGER.info("******二分查找执行次数=【{}】******",count);
-                return true;
-            }else if (assumeValue > target){
-                high = middle - 1;
-            }else {
-                low = middle + 1;
-            }
-        }
-        return false;
-    }
 
     /**
      * 排序算法
@@ -68,7 +38,7 @@ public class CommonAlgorithms {
      * @param targetArray
      */
     public static void insertSort(int[] targetArray){
-       int i , j , k;
+        int i , j , k;
         for ( i = 1; i < targetArray.length; i++) {
             //为targetArray[i]在前面的targetArray[0...i-1]有序区间中找一个合适的位置
             for ( j = i - 1; j >= 0 ; j--) {
@@ -82,7 +52,7 @@ public class CommonAlgorithms {
                 //将比i大的数往后移
                 int temp = targetArray[i];
                 for ( k = i-1; k > j; k--) {
-                   targetArray[k+1] = targetArray[k];
+                    targetArray[k+1] = targetArray[k];
                     targetArray[k] = temp;
                 }
             }
@@ -90,15 +60,6 @@ public class CommonAlgorithms {
     }
 
 
-    /**
-     * 冒泡排序
-     * @param targetArray
-     */
-    public static void bubbleSort(int[] targetArray){
-
-
-
-    }
 
     /**
      * 直接插入排序 2   时间复杂度： O(n^2) 空间复杂度 ： O(1)
@@ -112,13 +73,13 @@ public class CommonAlgorithms {
             int cur = array[i];
             boolean flag = false;
             for (int j = i-1; j > -1; j--) {
-               if (cur >= array[j]){
-                   array[j+1] = cur;
-                   flag = true;
-                   break;
-               }else{
-                  array[j+1] = array[j];
-               }
+                if (cur >= array[j]){
+                    array[j+1] = cur;
+                    flag = true;
+                    break;
+                }else{
+                    array[j+1] = array[j];
+                }
             }
             if (!flag){
                 array[0] = cur;
@@ -147,7 +108,7 @@ public class CommonAlgorithms {
                 startIndex = preIndex;
                 //DESC i-1: 前一个位置，startIndex: 实际前一个值所在的位置
                 for (int j = i-1; j > startIndex - 1; j--) {
-                   array[j+1]= array[j];
+                    array[j+1]= array[j];
                 }
             }
 
@@ -220,13 +181,40 @@ public class CommonAlgorithms {
 
 
 
+
+
+
     /**
-     * 快速排序
+     * 查询算法
      */
-    public static void quickSort(){
 
-
+    /**
+     * 二分查找  --- 前提是数组有序
+     * @param targetArray
+     * @param target
+     * @return
+     */
+    public static boolean binarySearch(int[] targetArray,int target){
+        //查询次数
+        int count = 0;
+        int low = 0;
+        int high = targetArray.length - 1;
+        while (low <= high){
+            count ++ ;
+            int middle = (low + high) / 2;
+            int assumeValue = targetArray[middle];
+            if (assumeValue==target){
+                LOGGER.info("******二分查找执行次数=【{}】******",count);
+                return true;
+            }else if (assumeValue > target){
+                high = middle - 1;
+            }else {
+                low = middle + 1;
+            }
+        }
+        return false;
     }
+
 
     /**
      * 区间合并算法: 时间复杂度： O(n),空间复杂度：O(1)
