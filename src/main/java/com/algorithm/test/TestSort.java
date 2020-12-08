@@ -1,6 +1,6 @@
 package com.algorithm.test;
 
-import com.algorithm.utils.algorithm.SortAlgorithms;
+import com.algorithm.algorithm.SortAlgorithms;
 
 public class TestSort {
 

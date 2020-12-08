@@ -1,11 +1,10 @@
-package com.algorithm.utils.algorithm;
+package com.algorithm.algorithm;
 
 import com.algorithm.dto.Interval;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -195,16 +194,12 @@ public class CommonAlgorithms {
      * @return
      */
     public static boolean binarySearch(int[] targetArray,int target){
-        //查询次数
-        int count = 0;
         int low = 0;
         int high = targetArray.length - 1;
         while (low <= high){
-            count ++ ;
-            int middle = (low + high) / 2;
+            int middle = (high - low) / 2 + low;
             int assumeValue = targetArray[middle];
             if (assumeValue==target){
-                LOGGER.info("******二分查找执行次数=【{}】******",count);
                 return true;
             }else if (assumeValue > target){
                 high = middle - 1;

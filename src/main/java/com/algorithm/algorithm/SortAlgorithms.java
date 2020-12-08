@@ -1,10 +1,9 @@
-package com.algorithm.utils.algorithm;
+package com.algorithm.algorithm;
 
 /**
  * 常见排序算法
  */
 public class SortAlgorithms {
-
 
     /**
      * 交换排序之 —— 冒泡排序 （稳定排序）

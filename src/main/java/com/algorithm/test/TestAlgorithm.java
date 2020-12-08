@@ -1,12 +1,11 @@
 package com.algorithm.test;
 
 import com.algorithm.dto.Interval;
-import com.algorithm.utils.algorithm.CommonAlgorithms;
+import com.algorithm.algorithm.CommonAlgorithms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
